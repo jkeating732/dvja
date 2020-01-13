@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        git https://github.com/jkeating732/dvja.git
+        git 'https://github.com/jkeating732/dvja.git'
         //git 'https://github.com/ajlanghorn/dvja.git'
         sh "mvn clean package"
       }
